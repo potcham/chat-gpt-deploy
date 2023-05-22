@@ -1,29 +1,45 @@
-# chat-gpt-deploy
+# Chat-GPT API with Python
 
-1. Set up environment
+Create chatbot using ChatGPT.
 
-```bash
-conda create -n openai python=3.9
-```
-2. activate the conda environment
-```bash
-conda activate opeani
-```
-3. install official python binding for openai
-```bash
-pip install openai
-```
+1. **Set up environment**
 
-4. install typer for better terminal
+    a. Create conda environment
+    ```bash
+    conda create -n openai python=3.9
+    ```
+    b. Install dependecies, typer for a better design in terminal
+    ```bash
+    pip install openai
+    pip install "typer[all]"
+    pip install Flask
+    ```
+2. **OPENAI credentials**
+    
+    I did not include the credentials script, so you have to create it
+        
+    *credentials.py*
+    ```python 
+    OPENAI_API_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    OPENAI_ORG_ID = 'xxxxxxxxxxxxxxxxxxxxxxxxxx'  
+    ```
 
-```bash
-pip install "typer[all]"
-```
+3. **ChatGPT in terminal**
 
-5. run
+    Run:
+    ```bash
+    python main.py
+    ```
 
-```bash
-python main.py
-```
+    ![](images/chat-terminal.png)
 
-pip install Flask
+4. **ChatGPT + Flask local deploy**
+
+    * Go inside to `chat-app` file
+    * Run
+        ```bash
+        python app.py
+        ```
+    ![](images/local-deploy.png)
+
+
