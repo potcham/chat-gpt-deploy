@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat-GPT - Asistente Virtual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container mt-3">
+        <h2 class="text-cebter mb-3">Chat-GPT - Asistente Virtual</h2>
+        <form action="/" method="post">
+            <div class="d-flex">
+                <input type="text" class="form-control mb-3 mx-3 w-75" name="question">
+                <button class="bin btn-primary mx-3 w-25 y-75" type="submit">Enviar</button>
+            </div>
+        </form>
+
+        <div class="card overflow-auto mx-3" style="height: 500px">
+            <div class="class card-body">
+                {% for c in chat%}
+                    <p>{{c}}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

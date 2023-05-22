@@ -19,3 +19,11 @@ pip install openai
 ```bash
 pip install "typer[all]"
 ```
+
+5. run
+
+```bash
+python main.py
+```
+
+pip install Flask

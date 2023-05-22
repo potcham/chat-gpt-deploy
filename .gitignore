@@ -1,4 +1,5 @@
 credentials.py
+chat-app/credentials.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
